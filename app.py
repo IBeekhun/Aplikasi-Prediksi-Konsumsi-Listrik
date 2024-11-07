@@ -31,13 +31,16 @@ if selected == "Halaman Utama":
     st.title("Selamat Datang di Aplikasi Prediksi Konsumsi Listrik")
     st.write("Diciptakan untuk Solusi Masa Depan yang Lebih Cerdas dan Efisien.")
     st.write("Selamat datang di aplikasi prediksi konsumsi listrik yang dirancang khusus untuk membantu memahami dan memprediksi kebutuhan energi dengan akurat. Aplikasi ini menggabungkan teknologi Multiple Linear Regression (MLR) dengan data yang telah dikumpulkan untuk memberikan prediksi yang akurat dan bermanfaat. Dikembangkan oleh Rifai Machri (NPM: 121055520121124), aplikasi ini tidak hanya membantu dalam analisis konsumsi listrik tetapi juga menjadi alat edukatif bagi Anda yang ingin memahami pola dan efisiensi energi.")
+    st.image("16694.jpg")  # Placeholder image
 
 # Halaman Analisis MLR
 elif selected == "Analisis MLR":
     st.title("Analisis Multiple Linear Regression (MLR)")
-
+    st.write("Selamat datang di halaman Analisis Multiple Linear Regression (MLR), di mana data berbicara dan keputusan menjadi lebih cerdas! Pada halaman ini, Anda dapat memprediksi konsumsi listrik dengan model statistik yang didukung oleh variabel-variabel penting, seperti Area, Jumlah Penghuni, Jumlah Alat Listrik, dan Jam Penggunaan. Temukan pola, buat prediksi, dan jelajahi berbagai aspek konsumsi energi untuk wawasan yang lebih mendalam!")
+    st.write("Konsistensi, keandalan, dan ketepatan dalam setiap prediksi — itulah inti dari MLR di aplikasi ini! Masukkan data Anda, lihat hasil analisis, dan temukan peluang untuk mengoptimalkan konsumsi energi di masa depan.")
+             
     # Mengunggah data
-    uploaded_file = st.file_uploader("Unggah file CSV dengan kolom Area, Jumlah_Penghuni, Jumlah_Alat_Listrik, Jam_Penggunaan, dan Konsumsi_Listrik", type="csv")
+    uploaded_file = st.file_uploader("Silahkan Unggah file CSV dengan kolom Area, Jumlah_Penghuni, Jumlah_Alat_Listrik, Jam_Penggunaan, dan Konsumsi_Listrik", type="csv")
 
     if uploaded_file is not None:
         data = pd.read_csv(uploaded_file)
@@ -139,6 +142,8 @@ elif selected == "Gambar Statis":
 # Halaman Notebook
 elif selected == "Notebook":
     st.title("Tampilkan Jupyter Notebook")
+    st.write("Selamat datang di halaman Jupyter Notebook! Di sini, Anda bisa langsung mengakses analisis mendalam dan proses perhitungan yang ada di balik prediksi konsumsi listrik. Halaman ini memungkinkan Anda untuk melihat, mengeksplorasi, dan memahami lebih jauh langkah-langkah kalkulasi dan pemodelan dengan Multiple Linear Regression (MLR).")
+    st.write("Apakah Anda seorang penggemar data atau sekadar ingin mengetahui logika di balik prediksi aplikasi ini, halaman ini akan memberikan wawasan lebih mendalam, lengkap dengan kode, visualisasi, dan catatan eksploratif. Nikmati kemudahan menjelajahi notebook kami, dan rasakan pengalaman belajar langsung dari analisis yang berjalan di balik layar!")
     notebook_filename = "MLR.ipynb"
     try:
         with open(notebook_filename, "r", encoding="utf-8") as f:
