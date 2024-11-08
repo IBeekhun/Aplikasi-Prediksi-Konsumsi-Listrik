@@ -27,7 +27,6 @@ if selected == "Halaman Utama":
     st.title("Selamat Datang di Aplikasi Prediksi Konsumsi Listrik")
     st.write("Diciptakan untuk Solusi Masa Depan yang Lebih Cerdas dan Efisien.")
     st.write("Selamat datang di aplikasi prediksi konsumsi listrik yang dirancang khusus untuk membantu memahami dan memprediksi kebutuhan energi dengan akurat. Aplikasi ini menggabungkan teknologi Multiple Linear Regression (MLR) dengan data yang telah dikumpulkan untuk memberikan prediksi yang akurat dan bermanfaat. Dikembangkan oleh Rifai Machri (NPM: 121055520121124), aplikasi ini tidak hanya membantu dalam analisis konsumsi listrik tetapi juga menjadi alat edukatif bagi Anda yang ingin memahami pola dan efisiensi energi.")
-    st.image("16694.jpg")  # Placeholder image
 
 # Halaman Analisis MLR
 elif selected == "Analisis MLR":
